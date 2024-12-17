@@ -5,7 +5,7 @@ var dd = {
   content: [
     {
       // Judul
-      text: "INVOICE",
+      text: "SALES INVOICE",
       bold: true,
       fontSize: 25,
       style: "center",
@@ -14,21 +14,23 @@ var dd = {
     {
       columns: [
         {
-          width: "63%",
+          width: "58%",
           columns: [
             {
               // Data Pelanggan
               layout: "noBorders",
               table: {
-                headerRows: 1,
-                widths: ["*", "auto"],
+                widths: ["*", 1, "auto"],
                 body: [
                   [
                     {
                       text: "Nama Bisnis",
                     },
                     {
-                      text: ": PT. DUNIA PRATAMA SEJAHTERA",
+                      text: ":",
+                    },
+                    {
+                      text: "PT. DUNIA PRATAMA SEJAHTERA",
                     },
                   ],
                   [
@@ -36,7 +38,10 @@ var dd = {
                       text: "Alamat Bisnis",
                     },
                     {
-                      text: ": LINDETEVES TRADE CENTER (LTC) GLODOK LANTAI UG BLOK C3 NO. 6, JL. HAYAM WURUK NO.127 RT 01 RW.06 MANGGA BESAR TAMAN SARI KOTA ADM. JAKARTA BARAT DKI JAKARTA 11180",
+                      text: ":",
+                    },
+                    {
+                      text: "LINDETEVES TRADE CENTER (LTC) GLODOK LANTAI UG BLOK C3 NO. 6, JL. HAYAM WURUK NO.127 RT 01 RW.06 MANGGA BESAR TAMAN SARI KOTA ADM. JAKARTA BARAT DKI JAKARTA 11180",
                     },
                   ],
                   [
@@ -44,7 +49,10 @@ var dd = {
                       text: "Nama Pelanggan",
                     },
                     {
-                      text: ": PT. MITRACO HOSETAMA",
+                      text: ":",
+                    },
+                    {
+                      text: "PT. MITRACO HOSETAMA",
                     },
                   ],
                   [
@@ -52,7 +60,10 @@ var dd = {
                       text: "Alamat Pelanggan",
                     },
                     {
-                      text: ": GEDUNG LINDETEVES TRADE CENTRE LT.SB JL. HAYAM WURUK NO.127 Blok A1 No.6 Kel. MANGGA BESAR, Kec. TAMAN SARI, Kota/Kab. JAKARTA BARAT DKI JAKARTA 11180",
+                      text: ":",
+                    },
+                    {
+                      text: "GEDUNG LINDETEVES TRADE CENTRE LT.SB JL. HAYAM WURUK NO.127 Blok A1 No.6 Kel. MANGGA BESAR, Kec. TAMAN SARI, Kota/Kab. JAKARTA BARAT DKI JAKARTA 11180",
                     },
                   ],
                   [
@@ -60,7 +71,10 @@ var dd = {
                       text: "Telepon",
                     },
                     {
-                      text: ": 0812-3456-789",
+                      text: ":",
+                    },
+                    {
+                      text: "0812-3456-789",
                     },
                   ],
                 ],
@@ -69,21 +83,27 @@ var dd = {
           ],
         },
         {
-          width: "37%",
+          width: "3%",
+          text: "",
+        },
+        {
+          width: "39%",
           columns: [
             {
               // Data Invoice
               layout: "noBorders",
               table: {
-                headerRows: 1,
-                widths: ["*", "auto"],
+                widths: ["*", 1, "auto"],
                 body: [
                   [
                     {
                       text: "Referensi",
                     },
                     {
-                      text: ": INV/DPS/11/12/24/00041",
+                      text: ":",
+                    },
+                    {
+                      text: "INV/DPS/11/12/24/00041",
                     },
                   ],
                   [
@@ -91,7 +111,10 @@ var dd = {
                       text: "Tanggal",
                     },
                     {
-                      text: ": 11/12/2024",
+                      text: ":",
+                    },
+                    {
+                      text: "11/12/2024",
                     },
                   ],
                   [
@@ -99,7 +122,10 @@ var dd = {
                       text: "Jatuh Tempo",
                     },
                     {
-                      text: ": 10/01/2025",
+                      text: ":",
+                    },
+                    {
+                      text: "10/01/2025",
                     },
                   ],
                   [
@@ -107,7 +133,10 @@ var dd = {
                       text: "Surat Jalan",
                     },
                     {
-                      text: ": SJ/DPS/11/12/24/00041",
+                      text: ":",
+                    },
+                    {
+                      text: "SJ/DPS/11/12/24/00041",
                     },
                   ],
                   [
@@ -115,7 +144,10 @@ var dd = {
                       text: "Pemesanan",
                     },
                     {
-                      text: ": SO/DPS/11/12/24/00041",
+                      text: ":",
+                    },
+                    {
+                      text: "SO/DPS/11/12/24/00041",
                     },
                   ],
                 ],
@@ -259,6 +291,9 @@ var dd = {
                       text: "Subtotal",
                     },
                     {
+                      text: ":",
+                    },
+                    {
                       text: "Rp 725.000",
                     },
                   ],
@@ -266,6 +301,9 @@ var dd = {
                     {
                       bold: true,
                       text: "Pajak PPN 11%",
+                    },
+                    {
+                      text: ":",
                     },
                     {
                       text: "Rp 79.750",
@@ -277,6 +315,9 @@ var dd = {
                       text: "Total",
                     },
                     {
+                      text: ":",
+                    },
+                    {
                       text: "Rp 804.750",
                     },
                   ],
@@ -284,6 +325,9 @@ var dd = {
                     {
                       bold: true,
                       text: "Sisa Tagihan",
+                    },
+                    {
+                      text: ":",
                     },
                     {
                       text: "Rp 804.750",
@@ -296,11 +340,12 @@ var dd = {
         },
       ],
     },
+    "Terbilang",
     {
-      margin: [0, 15, 0, 3],
-      canvas: [{ type: "line", x1: 0, y1: 0, x2: 350, y2: 0, lineWidth: 3 }],
+      margin: [0, 5],
+      canvas: [{ type: "line", x1: 0, y1: 0, x2: 350, y2: 0, lineWidth: 1 }],
     },
-    "Terbilang\nDelapan Ratus Empat Ribu Tujuh Ratus Lima Puluh Rupiah",
+    "Delapan Ratus Empat Ribu Tujuh Ratus Lima Puluh Rupiah",
     {
       // ttd
       margin: [0, 15, 0, 0],

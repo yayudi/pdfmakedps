@@ -16,8 +16,57 @@ var dd = {
         },
         {
           // Judul
-          text: "Pemesanan",
+          text: "Penawaran",
           style: "right",
+        },
+      ],
+    },
+    {
+      columns: [
+        {},
+        {
+          // Data Invoice
+          margin: [0, 10],
+          width: "40%",
+          layout: "noBorders",
+          table: {
+            widths: ["*", 1, "auto"],
+            body: [
+              [
+                {
+                  text: "Referensi",
+                },
+                {
+                  text: ":",
+                },
+                {
+                  text: "FCK-SQ/U1/DW/412D",
+                },
+              ],
+              [
+                {
+                  text: "Tanggal",
+                },
+                {
+                  text: ":",
+                },
+                {
+                  text: "11/12/2024",
+                },
+              ],
+              [
+                {
+                  text: "Jatuh Tempo",
+                },
+                {
+                  text: ":",
+                },
+                {
+                  text: "10/01/2025",
+                },
+              ],
+            ],
+          },
         },
       ],
     },
@@ -77,7 +126,7 @@ var dd = {
             [
               {
                 bold: true,
-                text: "Order Dari",
+                text: "Penawaran Kepada",
               },
               {
                 margin: [0, 10],
@@ -95,12 +144,12 @@ var dd = {
                     [
                       {
                         style: ["blue", "bold"],
-                        text: "Squilliam Fancyson",
+                        text: "Squilliam Fancyson III",
                       },
                     ],
                     [
                       {
-                        text: "Bikini Bottom, Pacific Ocean",
+                        text: "10000 Million Dollar Way\nBikini Bottom, Pacific Ocean\nUnited States of Atlantis",
                       },
                     ],
                   ],
@@ -184,6 +233,7 @@ var dd = {
       },
     },
     {
+      margin: [0, 10, 0, 20],
       columns: [
         {
           // pesan
@@ -201,6 +251,21 @@ var dd = {
                   ],
                   [
                     {
+                      margin: [0, 5],
+                      canvas: [
+                        {
+                          type: "line",
+                          x1: 0,
+                          y1: 0,
+                          x2: 300,
+                          y2: 0,
+                          lineWidth: 1,
+                        },
+                      ],
+                    },
+                  ],
+                  [
+                    {
                       text: "Pemujaan yang berlebihan itu tak sehat! Ayo, Jeffry",
                     },
                   ],
@@ -209,13 +274,11 @@ var dd = {
             },
           ],
         },
-
         {
           // Total
           width: "30%",
           columns: [
             {
-              margin: [0, 15],
               layout: "noBorders",
               table: {
                 headerRows: 1,
@@ -236,31 +299,7 @@ var dd = {
                   [
                     {
                       bold: true,
-                      text: "Pajak PPN 11%",
-                    },
-                    {
-                      text: ":",
-                    },
-                    {
-                      text: "Rp 79.750",
-                    },
-                  ],
-                  [
-                    {
-                      bold: true,
                       text: "Total",
-                    },
-                    {
-                      text: ":",
-                    },
-                    {
-                      text: "Rp 804.750",
-                    },
-                  ],
-                  [
-                    {
-                      bold: true,
-                      text: "Sisa Tagihan",
                     },
                     {
                       text: ":",
@@ -276,11 +315,12 @@ var dd = {
         },
       ],
     },
+    "Terbilang",
     {
-      margin: [0, 15, 0, 3],
-      canvas: [{ type: "line", x1: 0, y1: 0, x2: 400, y2: 0, lineWidth: 3 }],
+      margin: [0, 5],
+      canvas: [{ type: "line", x1: 0, y1: 0, x2: 400, y2: 0, lineWidth: 1 }],
     },
-    "Terbilang\nEmpat Juta Tujuh Ratus Delapan Puluh Dua Ribu Sembilan Ratus Sembilan Puluh Rupiah",
+    "Empat Juta Tujuh Ratus Delapan Puluh Dua Ribu Sembilan Ratus Sembilan Puluh Rupiah",
     {
       // ttd
       margin: [0, 30, 0, 0],

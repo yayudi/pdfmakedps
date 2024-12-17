@@ -2,6 +2,15 @@
 
 var dd = {
   margin: 0,
+  background: {
+    text: "VOID",
+    rotate: 90,
+    bold: true,
+    absolutePosition: { x: 20, y: 200 },
+    fontSize: 250,
+    opacity: 0.2,
+    color: "#000",
+  },
   content: [
     {
       // Judul
@@ -91,14 +100,17 @@ var dd = {
               layout: "noBorders",
               table: {
                 headerRows: 1,
-                widths: ["*", "auto"],
+                widths: ["*", 1, "auto"],
                 body: [
                   [
                     {
                       text: "Referensi",
                     },
                     {
-                      text: ": INV/DPS/11/12/24/00041",
+                      text: ":",
+                    },
+                    {
+                      text: "INV/DPS/11/12/24/00041",
                     },
                   ],
                   [
@@ -106,7 +118,10 @@ var dd = {
                       text: "Tanggal",
                     },
                     {
-                      text: ": 11/12/2024",
+                      text: ":",
+                    },
+                    {
+                      text: "11/12/2024",
                     },
                   ],
                   [
@@ -114,7 +129,10 @@ var dd = {
                       text: "Pemesanan",
                     },
                     {
-                      text: ": SO/DPS/11/12/24/00041",
+                      text: ":",
+                    },
+                    {
+                      text: "SO/DPS/11/12/24/00041",
                     },
                   ],
                 ],

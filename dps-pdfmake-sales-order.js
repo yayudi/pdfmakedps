@@ -35,14 +35,17 @@ var dd = {
           layout: "noBorders",
           table: {
             headerRows: 1,
-            widths: ["auto", "*"],
+            widths: ["auto", 1, "*"],
             body: [
               [
                 {
                   text: "Referensi",
                 },
                 {
-                  text: ": INV/DPS/11/12/24/00041",
+                  text: ":",
+                },
+                {
+                  text: "INV/DPS/11/12/24/00041",
                 },
               ],
               [
@@ -50,7 +53,10 @@ var dd = {
                   text: "Tanggal",
                 },
                 {
-                  text: ": 11/12/2024",
+                  text: ":",
+                },
+                {
+                  text: "11/12/2024",
                 },
               ],
               [
@@ -58,7 +64,10 @@ var dd = {
                   text: "Jatuh Tempo",
                 },
                 {
-                  text: ": 10/01/2025",
+                  text: ":",
+                },
+                {
+                  text: "10/01/2025",
                 },
               ],
             ],
@@ -296,12 +305,15 @@ var dd = {
               layout: "noBorders",
               table: {
                 headerRows: 1,
-                widths: ["*", "auto"],
+                widths: ["*", 1, "auto"],
                 body: [
                   [
                     {
                       bold: true,
                       text: "Subtotal",
+                    },
+                    {
+                      text: ":",
                     },
                     {
                       text: "Rp 725.000",
@@ -313,6 +325,9 @@ var dd = {
                       text: "Pajak PPN 11%",
                     },
                     {
+                      text: ":",
+                    },
+                    {
                       text: "Rp 79.750",
                     },
                   ],
@@ -322,6 +337,9 @@ var dd = {
                       text: "Total",
                     },
                     {
+                      text: ":",
+                    },
+                    {
                       text: "Rp 804.750",
                     },
                   ],
@@ -329,6 +347,9 @@ var dd = {
                     {
                       bold: true,
                       text: "Sisa Tagihan",
+                    },
+                    {
+                      text: ":",
                     },
                     {
                       text: "Rp 804.750",
